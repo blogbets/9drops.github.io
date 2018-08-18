@@ -1,0 +1,27 @@
+markdown: redcarpet
+permalink: /:title.html
+url: /blog
+lsi: true
+pygments: true
+safe: true
+auto: true
+
+# presonal config
+title: 编程笔记
+feed: 
+comments: disqus
+
+author:
+  name: 9drops
+  nickname: 9drops
+  email: codingnote.net@gmail.com
+  gmail: codingnote.net@gmail.com
+  site: http://www.icodingprogram.com
+
+seo: 
+  keyword: 
+  description: 
+config:
+  js_dir:
+  img_dir:
+  css_dir:
