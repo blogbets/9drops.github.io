@@ -5,22 +5,22 @@ lsi: true
 pygments: true
 safe: true
 auto: true
+highlighter: rouge
 
 # presonal config
-title: 编程笔记
+title: "iCodingProgram"
 feed: 
 comments: disqus
 
 author:
   name: 9drops
   nickname: 9drops
-  email: codingnote.net@gmail.com
-  gmail: codingnote.net@gmail.com
+  email: zhanbz@hotmail.com
   site: http://www.icodingprogram.com
 
 seo: 
-  keyword: 
-  description: 
+  keyword: "iCodingProgram"
+  description: "爱编程"
 config:
   js_dir:
   img_dir:
