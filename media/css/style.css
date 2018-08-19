@@ -232,6 +232,11 @@ color:black;
 .menu-rss {
 background:url(../img/rss.png) no-repeat right 2px;
 }
+
+.menu-github {
+background:url(../img/github.png) no-repeat right 2px;
+}
+
 .head-search {
 
 }
