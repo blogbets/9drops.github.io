@@ -1,8 +1,13 @@
 ---
-layout: post
-title: __attribute__常见使用
-tags: [c]
----
+ layout: post
+ title:  " __attribute__常见用法"
+ date:   2015-06-1 14:06:05
+ categories: Interview
+ tags: __attribute__
+ ---
+
+ * content
+ {:toc}
 
 __attribute__ 可作用于函数、变量、类型、标签、枚举。语法形式为__attribute__(((attribute-list)), attribute-list用逗号分隔，多个__attribute__用空格分隔。
 本文介绍常用于函数、变量的attribute:objc_runtime_name、objc_requires_super、objc_subclassing_restricted、cleanup、constructor and destructor、
