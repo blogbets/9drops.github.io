@@ -7,20 +7,20 @@
 
 # Site settings
 title: iCodingProgram
-brief-intro: Front-end Dev Engineer
+brief-intro: iOS Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.icodingprogram.com" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
+twitter_username: 9_drops
+facebook_username: 9drops
+github_username:  9drops
+email: zhanbz@hotmail.com
+weibo_username: 9drops
+zhihu_username: 9drops
+linkedIn_username: 9drops
 dribbble_username:
 
 description_footer: 本站记录我的编程之旅！
