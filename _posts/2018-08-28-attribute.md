@@ -5,9 +5,44 @@ date:   2018-08-28 22:06:05
 categories: Objective-C
 tags: [__attribute__]
 ---
+
+>语法
+
 \_\_attribute\_\_ 可作用于函数、变量、类型、标签、枚举。语法形式为__attribute__(((attribute-list)), attribute-list用逗号分隔，多个__attribute__用空格分隔。
-本文介绍常用于函数、变量的attribute:objc_runtime_name、objc_requires_super、objc_subclassing_restricted、cleanup、constructor and destructor、
-enable_if、overloadable、objc_boxable、nonnull、const、always_inline等。废话少说，直接上代码，你可以通过终端运行下面demo程序。
+
+>常见attribute
+
+本文介绍常见的用于函数、变量的attribute，如：objc_runtime_name、objc_requires_super、objc_subclassing_restricted、cleanup、constructor and destructor、enable_if、overloadable、objc_boxable、nonnull、const、always_inline等。
+
+>用法
+
+- objc_runtime_name 
+作用于类声明，用于重新指定类名，可用于混淆代码。
+- objc_requires_super
+标志子类复写这个方法时必须调用super的方法，否则给出编译警告
+- objc_subclassing_restricted 
+声明一个final类，即该类不能被继承
+- cleanup
+作用在变量上，变量作用域结束调用指定的注册函数
+- constructor 
+作用在函数上，此函数在main()函数之前调用，可设置优先级值，值越小越先调用
+- destructor
+作用在函数上，此函数在main()函数调用结束后调用，可设置优先级值，值越大越先调用
+- enable_if
+作用于函数，在编译阶段判断函数参数是否可用，不可用则报编译错误
+- overloadable
+作用于函数，实现c函数重载
+- objc_boxable
+作用于类型，实现struct等自定义数据类型的装箱操作
+- nonnull
+作用于函数的参数，被作用的参数不能为null
+- const
+作用于函数，如果函数参数不变，直接返回值，不再执行函数调用流程
+- always_inline
+作用于函数，指定此函数强制内联
+
+
+废话少说，直接上代码，你可以通过终端运行下面demo程序。
 编译命令：  clang -g  -ObjC -framework Foundation  attribute_demo1.c
 clang版本：9.0.0 x86_64-apple-darwin17.7.0
 ---
@@ -124,7 +159,7 @@ typedef struct __attribute__((objc_boxable)) {
     CGFloat x, y, width, height;
 } MyRect;
 
-#pragma mark - nonnull, 被定义的函数中第1, 2, ... n个参数不能为null
+#pragma mark - nonnull, 作用于函数的参数，被作用的参数不能为null
 void *my_memcpy(void *dest __attribute__((nonnull)), const void *src  __attribute__((nonnull)), size_t len)  {
     return memcpy(dest, src, len);
 }
@@ -158,7 +193,7 @@ int main(int argc, char **argv) {
     int ret = increaseOne(3);
     ret = increaseOne(3);
     ret = square(5);
-
+    printf("Leave %s\n", __func__);
     return 0;
 }
 ``` 
