@@ -7,7 +7,7 @@
 
 # Site settings
 title: iCodingProgram
-brief-intro: iOS Engineer
+brief-intro: iOSer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.icodingprogram.com" # the base hostname & protocol for your site
 
