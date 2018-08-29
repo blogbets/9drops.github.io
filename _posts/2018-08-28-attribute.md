@@ -6,15 +6,15 @@ categories: Objective-C
 tags: [__attribute__]
 ---
 
->语法
+## 0. 语法
 
 \_\_attribute\_\_ 可作用于函数、变量、类型、标签、枚举。语法形式为__attribute__(((attribute-list)), attribute-list用逗号分隔，多个__attribute__用空格分隔。
 
->常见attribute
+## 1. 常见attribute
 
 本文介绍常见的用于函数、变量的attribute，如：objc_runtime_name、objc_requires_super、objc_subclassing_restricted、cleanup、constructor and destructor、enable_if、overloadable、objc_boxable、nonnull、const、always_inline等。
 
->用法
+## 2. 用法
 
 - objc_runtime_name 
 作用于类声明，用于重新指定类名，可用于混淆代码。
@@ -41,10 +41,11 @@ tags: [__attribute__]
 - always_inline
 作用于函数，指定此函数强制内联
 
+## 3. 示例
 
-废话少说，直接上代码，你可以通过终端运行下面demo程序。
+废话少说，直接上代码，你可以在终端上运行、修改、调试下面的程序。
 编译命令：  clang -g  -ObjC -framework Foundation  attribute_demo1.c
-clang版本：9.0.0 x86_64-apple-darwin17.7.0
+在clang版本：9.0.0 x86_64-apple-darwin17.7.0上编译运行通过。
 ---
 
 >attribute_demo1.c
