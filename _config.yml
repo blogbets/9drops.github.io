@@ -15,15 +15,15 @@ permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: 9_drops
-facebook_username: 9drops
+facebook_username:
 github_username:  9drops
 email: zhanbz@hotmail.com
-weibo_username: 9drops
-zhihu_username: 9drops
-linkedIn_username: 9drops
+weibo_username:
+zhihu_username: 
+linkedIn_username: 
 dribbble_username:
 
-description_footer: 本站记录我的编程之旅！
+description_footer: 编程、学习、思考
 
 # comments
 # two ways to comment, only choose one, and use your own short name
