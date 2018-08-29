@@ -17,7 +17,7 @@ type: page
 
 ## 联系我
 
-* GitHub：[Gaohaoyang](https://github.com/9drops)
+* GitHub：[9drops](https://github.com/9drops)
 * email：zhanbz@hotmail.com
 * [Twitter](https://twitter.com/9_drops)
 
