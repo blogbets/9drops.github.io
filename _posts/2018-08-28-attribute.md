@@ -5,9 +5,14 @@ date:   2018-08-28 22:06:05
 categories: Objective-C
 tags: [__attribute__]
 ---
+\_\_attribute\_\_ 可作用于函数、变量、类型、标签、枚举。语法形式为__attribute__(((attribute-list)), attribute-list用逗号分隔，多个__attribute__用空格分隔。
+本文介绍常用于函数、变量的attribute:objc_runtime_name、objc_requires_super、objc_subclassing_restricted、cleanup、constructor and destructor、
+enable_if、overloadable、objc_boxable、nonnull、const、always_inline等。废话少说，直接上代码，你可以通过终端运行下面demo程序。
+编译命令：  clang -g  -ObjC -framework Foundation  attribute_demo1.c
+clang版本：9.0.0 x86_64-apple-darwin17.7.0
+---
 
-
-##attribute_demo1.c
+>attribute_demo1.c
 
 ```
 #include <stdio.h>
