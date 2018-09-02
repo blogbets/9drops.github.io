@@ -26,9 +26,9 @@ dribbble_username:
 description_footer: 编程、学习、思考
 
 #gitment
-comment_gitment_repo: 你的repo名
-comment_gitment_clientId: 你的clientId名
-comment_gitment_clientSecret: 你的clientSecret
+comment_gitment_repo: 9drops.github.io
+comment_gitment_clientId: 1969e28cce378f26d04a
+comment_gitment_clientSecret: 0e52cda1cea8a74d84bbd70f9a31136b8a1568ea
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
