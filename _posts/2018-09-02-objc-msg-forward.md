@@ -36,7 +36,10 @@ objc_msgSend函数会根据接收者与选择子的类型来调用适当的方�
 
 ![Picture loading](/media/objc_msg_forward.jpg)
 
+--
+
 >下面用runtimeDemo1.m程序描述objc消息转发机制。
+
 ```
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
@@ -140,5 +143,5 @@ int main(int argc, char **argv) {
 
     return 0;
 }
-
 ```
+
