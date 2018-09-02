@@ -36,7 +36,7 @@ objc_msgSend函数会根据接收者与选择子的类型来调用适当的方�
 
 ![Picture loading](/media/objc_msg_forward.jpg)
 
---
+
 
 >下面用runtimeDemo1.m程序描述objc消息转发机制。
 
@@ -97,7 +97,7 @@ void playGame(id self, SEL sel) {
     NSLog(@"Call %s", __func__);
 }
 
-///1
+//1
 + (BOOL) resolveInstanceMethod: (SEL) sel {
     // return NO //去掉此行的注释则执行 2
     if (sel == @selector(play)) {
@@ -108,7 +108,7 @@ void playGame(id self, SEL sel) {
     return NO;
 }
 
-///2
+//2
 - (id) forwardingTargetForSelector:(SEL) sel {
     // return nil; //去掉此行的注释则执行 3
     if (sel == @selector(play)) {
@@ -118,7 +118,7 @@ void playGame(id self, SEL sel) {
     return [super forwardingTargetForSelector:sel];
 }
 
-///3
+//3
 - (void) forwardInvocation:(NSInvocation *)invocation {
     NSLog(@"Call %s", __func__);
     [invocation invokeWithTarget:_invocationProxy];
