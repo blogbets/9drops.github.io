@@ -34,25 +34,20 @@ objc_msgSend函数会根据接收者与选择子的类型来调用适当的方�
 ## 2. 消息转发
 程序编译期间编译器无法知道消息对应的方法是否实现，程序运行期间当对象收到无法解读的消息会启动“消息转发”机制，程序员可以经由此过程告诉对象应如何处理此消息。
 
-```flow
-op1=>operation: resolveInstanceMethod
-op2=>operation: forwardingTargetForSelector
-op3=>operation: forwardInvocation
-opUnrecognized=>operation: 消息未能处理
-opEnd=>operation: 消息已处理
-cond1=>condition: Yes or No?
-cond2=>condition: 返回备援接收者为nil?
-cond3=>condition: invocation能否处理?
+```
+graph TD
+op1[resolveInstanceMethod]
+op2[forwardingTargetForSelector]
+op3[forwardInvocation]
+opUnrecognized[消息未能处理]
+opEnd[消息已处理]
+op1 -->|返回YES|opEnd
+op1 -->|返回NO|op2
+op2 -->|返回备援的接收者|opEnd
+op2 -->|返回nil|op3
+op3 -->|invocation能处理|opEnd
+op3 -->|invocation不能处理|opUnrecognized
 
-
-op1->cond1
-cond1(yes)->opEnd
-cond1(no)->op2(right)->cond2
-cond2(no)->opEnd
-cond2(yes, right)->op3
-op3(right)->cond3
-cond3(yes)->opEnd
-cond3(no)->opUnrecognized
 ```
 
 >下面用runtimeDemo1.m程序描述objc消息转发机制。
