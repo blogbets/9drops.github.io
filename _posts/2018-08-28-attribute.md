@@ -6,6 +6,9 @@ categories: Objective-C
 tags: [__attribute__]
 ---
 
+* content
+{:toc}
+
 ## 0. 语法
 
 \_\_attribute\_\_ 可作用于函数、变量、类型、标签、枚举。语法形式为__attribute__(((attribute-list)), attribute-list用逗号分隔，多个__attribute__用空格分隔。
