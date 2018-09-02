@@ -34,7 +34,7 @@ objc_msgSend函数会根据接收者与选择子的类型来调用适当的方�
 ## 2. 消息转发
 程序编译期间编译器无法知道消息对应的方法是否实现，程序运行期间当对象收到无法解读的消息会启动“消息转发”机制，程序员可以经由此过程告诉对象应如何处理此消息。
 
-![Alt text](/media/objc_msg_forward.jpg)
+![Picture loading](/media/objc_msg_forward.jpg)
 
 >下面用runtimeDemo1.m程序描述objc消息转发机制。
 ```
