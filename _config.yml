@@ -9,7 +9,7 @@
 title: iCodingProgram
 brief-intro: iOSer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://icodingprogram.com" # the base hostname & protocol for your site
+url: "https://9drops.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
