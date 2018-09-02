@@ -36,23 +36,6 @@ objc_msgSend函数会根据接收者与选择子的类型来调用适当的方�
 
 ![Alt text](/media/objc_msg_forward.jpg)
 
-
-```
-graph TD
-op1[resolveInstanceMethod]
-op2[forwardingTargetForSelector]
-op3[forwardInvocation]
-opUnrecognized[消息未能处理]
-opEnd[消息已处理]
-op1 -->|返回YES|opEnd
-op1 -->|返回NO|op2
-op2 -->|返回备援的接收者|opEnd
-op2 -->|返回nil|op3
-op3 -->|invocation能处理|opEnd
-op3 -->|invocation不能处理|opUnrecognized
-
-```
-
 >下面用runtimeDemo1.m程序描述objc消息转发机制。
 ```
 #import <Foundation/Foundation.h>
