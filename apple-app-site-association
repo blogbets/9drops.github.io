@@ -1,10 +1,9 @@
 {
   "applinks": {
     "apps": [],
-    "details": {
-      "FRZ9RMZ2ZY.up366.com.txmanios": {
-        "paths":["/iosStudentUniversalLinksJump/*"]
-      }
-    }
+    "details": [{
+      "appID":"FRZ9RMZ2ZY.up366.com.txmanios",
+      "paths":["/iosStudentUniversalLinksJump/*"]
+     }]
   }
 }
