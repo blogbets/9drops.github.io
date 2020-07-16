@@ -4,6 +4,10 @@
     "details": [{
       "appID":"FRZ9RMZ2ZY.up366.com.txmanios",
       "paths":["/iosStudentUniversalLinksJump/*"]
+     },
+     {
+      "appID":"FRZ9RMZ2ZY.up366.com.txmanios",
+      "paths":["/qq_conn/1106719607/*"]
      }]
   }
 }
