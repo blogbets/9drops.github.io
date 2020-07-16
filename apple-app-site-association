@@ -7,7 +7,7 @@
      },
      {
       "appID":"FRZ9RMZ2ZY.up366.com.txmanios",
-      "paths":["/qq_conn/1106719607/*"]
+      "paths":["*","/qq_conn/1106719607/*"]
      }]
   }
 }
